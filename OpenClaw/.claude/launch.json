@@ -1,0 +1,24 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gateway",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["scripts/run-node.mjs", "--dev", "gateway"],
+      "port": 18789,
+      "autoPort": false
+    },
+    {
+      "name": "docs",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["mint", "dev"],
+      "port": 3000
+    },
+    {
+      "name": "ui",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["scripts/ui.js", "dev"],
+      "port": 5173
+    }
+  ]
+}
